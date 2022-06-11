@@ -6,10 +6,10 @@ public class Main {
         taskTwo();
         taskThree();
     }
-    ////////////////////////////////////////////////////////////////////////////////
+    /////////////////////////////////////////////////////////////////////////////////
     // 1 ex
-    public static int proverka(int Year) {
-        if (Year % 4 == 0 || Year % 400 == 0) {
+    public static int check(int Year) {
+        if (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0) {
             System.out.println(Year + " -high-grade year");
         } else {
             System.out.println(Year + " -not a high-grade year");
@@ -20,7 +20,7 @@ public class Main {
     public static void taskOne() {
         System.out.println("--==ex.1==--");
         int year = 2004;
-        int highYear = proverka(year);
+        int highYear = check(year);
     }
 
     /////////////////////////////////////////////////////////////////////////////////
