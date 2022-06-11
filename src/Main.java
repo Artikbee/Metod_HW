@@ -9,7 +9,7 @@ public class Main {
     /////////////////////////////////////////////////////////////////////////////////
     // 1 ex
     public static int check(int Year) {
-        if (Year % 4 == 0 || Year % 400 == 0) {
+        if (Year % 4 == 0 && Year % 100 != 0 || Year % 400 == 0) {
             System.out.println(Year + " -high-grade year");
         } else {
             System.out.println(Year + " -not a high-grade year");
